@@ -1,7 +1,6 @@
 $(function () {
 var socket = io();
 var bruger = "Bob";
-//Math.random();
 $('#bruger').val(bruger);
 $('form').submit(function(){
   socket.emit('chat message',{message: $('#m').val(), bruger: $('#bruger').val()});
