@@ -4,7 +4,7 @@
     "deploy": "now && now alias"
   },
   "name": "Cabac",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "satan?",
   "dependencies": {
     "express": "4.16.3",
