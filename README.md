@@ -43,3 +43,7 @@ $('form').submit(function(){
   $('#m').val('');
 ```
 - yes but it takes way longer time to use the standard library and you need write more
+
+## src
+
+https://socket.io/get-started/chat/
