@@ -1,7 +1,9 @@
 # Run local:
- "node index.js"
 
-# deploy online
+ "node server/index.js"
+
+# deploy online:
+
   "npm run deploy"
 
 # Change name:
@@ -20,14 +22,16 @@
 
     Cabac
 
-## Qs
+## Qs:
+
 - what is the primitive data types in JavaScript? What primitive datatypes do we use in the chat application?
 - what is a function and what do you use it for? Do we use any in the chat application? Should we use more?
 - what is the JavaScript standard library? What do we use from it?
 - what is `jQuery`? What do we use `jQuery` for in the chat application?
 - can we remove the need for `jQuery` by using the standard DOM library?
 
-## As
+## As:
+
 - a  primitive data type is all except objects define values, we use strings and numbers i cant find any of the other in the code
 - a function is all things that makes the computer do something, yes we does, that depents on what we need to do
 - the standart library is all the build in fuctions

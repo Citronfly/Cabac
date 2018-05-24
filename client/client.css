@@ -8,6 +8,8 @@ html{
   form button { width: 9%; background: rgb(255, 0, 0); border: none; padding: 10px; }
   #messages { list-style-type: none; margin: 0; padding: 0; }
   #messages li { padding: 5px 10px; }
+  .avatar {width: 15px; height: 15px; border-radius: 50%;}
+
 
   /* if i need later
   #messages li:nth-child(odd) { background: #868383; }*/
