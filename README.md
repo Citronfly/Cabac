@@ -1,4 +1,4 @@
-#first!
+# first if it dont work:
 "npm install"
 
 # Run local:
