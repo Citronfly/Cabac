@@ -8,6 +8,9 @@ $('form').submit(function(){
   socket.emit('chat message',{message: $(INPUT_SELECTOR).val(), user: $(USER_SELECTOR).val()});
   $(INPUT_SELECTOR).val('');
   return false;
+  if(INPUT_SELECTOR == "ratm"){
+INPUT_SELECTOR = "link";
+  }
 });
 socket.on('chat message', function(msg){
   var avatar = '<img src="https://api.adorable.io/avatars/15/' + msg.user + '.png" class = "avatar">';
