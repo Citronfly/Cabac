@@ -11,23 +11,23 @@ $('form').submit(function(){
   }
 
 
-  function replaceWithEmoji(input,output){
-    message = message.replace(input, output);
+  function replaceMessage(search, replacement){
+    message = message.split(search).join(replacement);
   }
 
-replaceWithEmoji("$P", "🤑");
-replaceWithEmoji("(:", "🙃");
-replaceWithEmoji(";P", "😜");
-replaceWithEmoji(":P", "😛");
-replaceWithEmoji(":#", "🤬");
-replaceWithEmoji("T_T", "😭");
-replaceWithEmoji(";)", "😉");
-replaceWithEmoji("XD", "😝");
-replaceWithEmoji("</3", "💔");
-replaceWithEmoji("100%", "💯");
-replaceWithEmoji("<3", "❤️");
-replaceWithEmoji(":)", "😃");
-replaceWithEmoji("ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>');
+replaceMessage("$P", "🤑");
+replaceMessage("(:", "🙃");
+replaceMessage(";P", "😜");
+replaceMessage(":P", "😛");
+replaceMessage(":#", "🤬");
+replaceMessage("T_T", "😭");
+replaceMessage(";)", "😉");
+replaceMessage("XD", "😝");
+replaceMessage("</3", "💔");
+replaceMessage("100%", "💯");
+replaceMessage("<3", "❤️");
+replaceMessage(":)", "😃");
+replaceMessage("ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>');
 
   socket.emit('chat message',{message: message, user: $(USER_SELECTOR).val()});
   $(INPUT_SELECTOR).val('');
