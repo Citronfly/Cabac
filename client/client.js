@@ -5,7 +5,7 @@ var INPUT_SELECTOR = "#m";
 var USER_SELECTOR = '#user';
 $(USER_SELECTOR).val(INITIAL_USERNAME);
 $('form').submit(function(){
-  var message escapeHtml=($(INPUT_SELECTOR).val());
+  var message = escapeHtml($(INPUT_SELECTOR).val());
 
   function escapeHtml(unsafe) {
       return unsafe
