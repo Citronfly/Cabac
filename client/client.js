@@ -15,19 +15,19 @@ $('form').submit(function(){
     message = message.split(search).join(replacement);
   }
 
-replaceMessage("$P", "🤑");
-replaceMessage("(:", "🙃");
-replaceMessage(";P", "😜");
-replaceMessage(":P", "😛");
-replaceMessage(":#", "🤬");
-replaceMessage("T_T", "😭");
-replaceMessage(";)", "😉");
-replaceMessage("XD", "😝");
-replaceMessage("</3", "💔");
-replaceMessage("100%", "💯");
-replaceMessage("<3", "❤️");
-replaceMessage(":)", "😃");
-replaceMessage("ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>');
+  replaceMessage("$P", "🤑");
+  replaceMessage("(:", "🙃");
+  replaceMessage(";P", "😜");
+  replaceMessage(":P", "😛");
+  replaceMessage(":#", "🤬");
+  replaceMessage("T_T", "😭");
+  replaceMessage(";)", "😉");
+  replaceMessage("XD", "😝");
+  replaceMessage("</3", "💔");
+  replaceMessage("100%", "💯");
+  replaceMessage("<3", "❤️");
+  replaceMessage(":)", "😃");
+  replaceMessage("ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>');
 
   socket.emit('chat message',{message: message, user: $(USER_SELECTOR).val()});
   $(INPUT_SELECTOR).val('');
