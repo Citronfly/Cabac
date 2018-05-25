@@ -18,8 +18,8 @@
 
 # How to write a messege
 
-1. click on the big box in the buttom
-2. write your messenge
+1. click on the big box in the bottom
+2. write your message
 3. press enter or click on the box with the text "send"
 
 #Concept Names
