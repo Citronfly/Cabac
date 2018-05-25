@@ -5,8 +5,16 @@ var INPUT_SELECTOR = "#m";
 var USER_SELECTOR = '#user';
 $(USER_SELECTOR).val(INITIAL_USERNAME);
 $('form').submit(function(){
-  var message = $(INPUT_SELECTOR).val();
+  var message escapeHtml=($(INPUT_SELECTOR).val());
 
+  function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+   }
 
 
   function replaceMessage(search, replacement){
