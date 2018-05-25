@@ -37,6 +37,14 @@ $('form').submit(function(){
   replaceMessage("Ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">Ratm</a>');
   replaceMessage("RATM", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">RATM</a>');
 
+  $('html').animate(
+        {
+          scrollTop: $(document).height(),
+        },
+        1500
+      )
+
+
   socket.emit('chat message',{message: message, user: $(USER_SELECTOR).val()});
   $(INPUT_SELECTOR).val('');
   return false;
