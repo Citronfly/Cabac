@@ -1,6 +1,6 @@
 # Run local:
 
- "node server/index.js"
+ "node server/index.js" or
  "npm run start"
 
 # deploy online:
