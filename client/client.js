@@ -9,42 +9,25 @@ $('form').submit(function(){
   if(message == "ratm"){
     message = '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>';
   }
-  if(message == ":)"){
-    message = "😃";
+
+
+  function replaceWithEmoji(input,output){
+    message = message.replace(input, output);
   }
-  if(message == "<3"){
-    message = "❤️";
-  }
-  if(message == "100%"){
-    message = "💯";
-  }
-  if(message == "</3"){
-    message = "💔";
-  }
-  if(message == "XD"){
-    message = "😝";
-  }
-  if(message == ";)"){
-    message = "😉";
-  }
-  if(message == "T_T"){
-    message = "😭";
-  }
-  if(message == ":#"){
-    message = "🤬";
-  }
-  if(message == ":P"){
-    message = "😛";
-  }
-  if(message == ";P"){
-    message = "😜";
-  }
-  if(message == "(:"){
-    message = "🙃";
-  }
-  if(message == "$P"){
-    message = "🤑";
-  }
+
+replaceWithEmoji("$P", "🤑");
+replaceWithEmoji("(:", "🙃");
+replaceWithEmoji(";P", "😜");
+replaceWithEmoji(":P", "😛");
+replaceWithEmoji(":#", "🤬");
+replaceWithEmoji("T_T", "😭");
+replaceWithEmoji(";)", "😉");
+replaceWithEmoji("XD", "😝");
+replaceWithEmoji("</3", "💔");
+replaceWithEmoji("100%", "💯");
+replaceWithEmoji("<3", "❤️");
+replaceWithEmoji(":)", "😃");
+replaceWithEmoji("ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>');
 
   socket.emit('chat message',{message: message, user: $(USER_SELECTOR).val()});
   $(INPUT_SELECTOR).val('');
