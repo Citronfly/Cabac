@@ -1,3 +1,6 @@
+#first!
+"npm install"
+
 # Run local:
 
  "node server/index.js" or
