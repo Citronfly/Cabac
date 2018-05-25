@@ -6,9 +6,7 @@ var USER_SELECTOR = '#user';
 $(USER_SELECTOR).val(INITIAL_USERNAME);
 $('form').submit(function(){
   var message = $(INPUT_SELECTOR).val();
-  if(message == "ratm"){
-    message = '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>';
-  }
+
 
 
   function replaceMessage(search, replacement){
@@ -28,6 +26,8 @@ $('form').submit(function(){
   replaceMessage("<3", "❤️");
   replaceMessage(":)", "😃");
   replaceMessage("ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>');
+  replaceMessage("Ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">Ratm</a>');
+  replaceMessage("RATM", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">RATM</a>');
 
   socket.emit('chat message',{message: message, user: $(USER_SELECTOR).val()});
   $(INPUT_SELECTOR).val('');
