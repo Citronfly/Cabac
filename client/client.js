@@ -31,7 +31,7 @@ $('form').submit(function(){
   replaceMessage("XD", "😝");
   replaceMessage("</3", "💔");
   replaceMessage("100%", "💯");
-  replaceMessage("<3", "❤️");
+  replaceMessage("&lt;3", "❤️");
   replaceMessage(":)", "😃");
   replaceMessage("ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">ratm</a>');
   replaceMessage("Ratm", '<a href="https://www.youtube.com/watch?v=wauzrPn0cfg">Ratm</a>');
